@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Salary Prediction</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>faculty remuneration system</h1>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="cgpa">CGPA:</label>
+        <input type="number" id="cgpa" name="cgpa" step="0.01" required>
+
+        <label for="experience">Experience (in years):</label>
+        <input type="number" id="experience" name="experience" required>
+
+        <label for="qualification">Qualification:</label>
+        <select id="qualification" name="qualification" required>
+          <option value="">Select Qualification</option>
+          <option value="Bachelors">Bachelors</option>
+          <option value="Masters">Masters</option>
+          <option value="PhD">PhD</option>
+        </select>
+
+        <label for="hackerrank">HackerRank Rank:</label>
+        <input type="number" id="hackerrank" name="hackerrank" required>
+
+        <label for="leetcode">LeetCode Rank:</label>
+        <input type="number" id="leetcode" name="leetcode" required>
+        <label for="interests">Area of Interest</label>
+        <select id="interests" name="interests" required>
+          <option value="" disabled selected>Select your area of interest</option>
+          <option value="iot">iot</option>
+          <option value="AI">AI</option>
+          <option value="cloud computing">cloud computing</option>
+          <option value="deep learning">deep learning</option>
+          <option value="data mining">data mining</option>
+        </select>
+
+
+        <input type="submit" value="Submit" onclick="predictSalary(event)">
+      </form>
+
+      <div id="result"></div>
+    </div>
+
+   <script src="script.js"></script>
+  </body>
+</html>
